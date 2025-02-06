@@ -1,0 +1,42 @@
+
+/* Classes générales */
+
+.flexbox-center-row, .flexbox-center-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexbox-center-row {
+    flex-direction: row;
+}
+
+.flexbox-center-col {
+    flex-direction: column;
+}
+
+
+/* Composants */
+
+nav, footer {
+    width: 90%;
+    
+}
+
+nav {
+    background-color: #A0A0A0;
+    border: solid 3px ;
+    padding: 3vh 0px;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.button {
+    
+
+
+}
+
