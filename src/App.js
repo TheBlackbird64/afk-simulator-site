@@ -3,19 +3,25 @@ import './App.css';
 import './components/components.css'
 import Navbar from "./components/navbar.js";
 import Footer from "./components/footer.js";
+import { useState, useEffect } from "react";
 
 function App() {
-	let color = ["#6060FF", "#FF6060", "#60FF60"]
+	const [col, setCol] = useState(0);
+
+	useEffect(() => {
+        const colors = ["red", "green", "blue"];
+        setCol(colors[Math.floor(Math.random() * colors.length)]);
+    }, []);
 
 	return (
 		<div className="App">
-			<Navbar col={color}/>
+			<Navbar col={col}/>
 
-			<main>
-
+			<main className="flexbox-center-col">
+				<img src="./images/Titre.png" alt="Titre du jeu"/>
 			</main>
 
-			<Footer col={color} />
+			<Footer col={col} />
 		</div>
 	);
 }

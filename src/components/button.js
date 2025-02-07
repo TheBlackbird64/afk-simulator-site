@@ -1,13 +1,9 @@
 import './components.css';
 
-function Button ({col, txt}) {
-    
-    function btListenerClic() {
-        
-    }
+function Button ({col, txt, callback = () => {}}) {
 
     return (
-        <button className={`button`} onClick={btListenerClic}> {txt} </button>
+        <button className={`button back-${col}`} onClick={callback}> {txt} </button>
     );
 }
 

@@ -4,9 +4,9 @@ import Button from "./button.js";
 function Navbar({col}) {
     
     return (
-        <nav className={`flexbox-center-row`}>
+        <nav className={`flexbox-center-row border-${col}`}>
             <button className='nav-button-home'>
-                <img src="./icon.png" alt="logo"/>
+                <img src="./images/icon.png" alt="logo"/>
                 
             </button>
 
@@ -14,6 +14,7 @@ function Navbar({col}) {
             <Button col={col} txt="Télécharger le jeu"/>
             <Button col={col} txt="Mises à jour à venir"/>
             <Button col={col} txt="Collaborateurs & autres projets"/>
+            <Button col={col} txt="Contact"/>
         </nav>
     );
 }
