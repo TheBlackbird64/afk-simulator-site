@@ -5,7 +5,7 @@ import Navbar from "./components/navbar.js";
 import Footer from "./components/footer.js";
 
 function App() {
-	let color = "bt-color-r"
+	let color = ["#6060FF", "#FF6060", "#60FF60"]
 
 	return (
 		<div className="App">

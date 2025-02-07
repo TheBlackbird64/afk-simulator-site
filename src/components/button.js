@@ -7,7 +7,7 @@ function Button ({col, txt}) {
     }
 
     return (
-        <button className={`${col} button`} onclick={btListenerClic}> {txt} </button>
+        <button className={`button`} onClick={btListenerClic}> {txt} </button>
     );
 }
 

@@ -4,9 +4,9 @@ import Button from './button.js';
 function Footer({col}) {
 
     return (
-        <footer className={`flexbox-center-raw ${col}`}>
+        <footer className={`flexbox-center-raw`}>
             <Button col={col} txt=""/>
-
+            
         </footer>
     );
 }

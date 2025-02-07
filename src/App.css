@@ -7,18 +7,6 @@
     --green: #60FF60;
 }
 
-.bt-color-r {
-    background-color: var(--red);
-}
-
-.bt-color-g {
-    background-color: var(--green);
-}
-
-.bt-color-b {
-    background-color: var(--blue);
-}
-
 /* Corps de la page */
 
 html, body, #root, .App {
@@ -37,3 +25,4 @@ body {
 	background-image: url("images/fond.png");
 	background-size: 100% 100%;
 }
+
