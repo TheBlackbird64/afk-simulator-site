@@ -3,6 +3,7 @@ import './App.css';
 import './components/components.css'
 import Navbar from "./components/navbar.js";
 import Footer from "./components/footer.js";
+import Button from "./components/button.js";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
 			<main className="flexbox-center-col">
 				<img src="./images/Titre.png" alt="Titre du jeu"/>
+				<Button col={col} txt="Jouez maintenant !"/>
 			</main>
 
 			<Footer col={col} />

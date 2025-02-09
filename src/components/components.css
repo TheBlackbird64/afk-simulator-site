@@ -8,7 +8,8 @@
 * {
     --blue: #6060FF;
     --red: #FF6060;
-    --green: #60FF60;
+    --green: #60EF60;
+    --grey: #606060;
 }
 
 .flexbox-center-row {
@@ -70,14 +71,40 @@ nav, footer {
 
 
 /* Boutons */
+
 .button {
     margin: 0 auto;
+    width: 15%;
     height: 80%;
-    width: 10%;
-
     border: 0px;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
+
+.button img {
+    height: 80%;
+    margin-left: 5%;
+}
+
+.button div {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: var(--grey);
+}
+
+.button p {
+    margin: 0 auto;
+}
+
+nav .button {
+    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+
+main .button { /* Bouton de la page d'accueil pas dans la nav */
+    margin: 10vh;
+    width: 30%;
+    height: 8vh;
+}
+
 
 /*  
     ------------------------------------------------
