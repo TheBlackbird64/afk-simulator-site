@@ -33,7 +33,7 @@ body {
 	background-size: 100% 100%;
 }
 
-main img {
+main > img {
     margin-top: 10%;
     width: 65vw;
 }

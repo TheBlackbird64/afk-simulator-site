@@ -55,6 +55,14 @@ nav {
     float: left;
 }
 
+nav .button {
+    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+
+nav .button div {
+    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+
 /* Footer */
 footer {
     margin-top: auto;
@@ -73,36 +81,48 @@ nav, footer {
 /* Boutons */
 
 .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    padding: 0;
     margin: 0 auto;
-    width: 15%;
+    width: 17%;
     height: 80%;
     border: 0px;
 }
 
 .button img {
     height: 80%;
+    margin-right: 3%;
     margin-left: 5%;
 }
 
 .button div {
-    position: absolute;
+    height: 100%;
+    margin-right: 0;
+    flex-grow: 1;
     right: 0;
-    width: 100%;
-    background-color: var(--grey);
+    background-color: var(--grey)
 }
 
-.button p {
-    margin: 0 auto;
+.button div p {
+    padding: 0;
+    margin: auto;
 }
 
-nav .button {
-    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+/* Animations des boutons */
+
+.button:hover {
+    background-color: red;
 }
+
 
 main .button { /* Bouton de la page d'accueil pas dans la nav */
     margin: 10vh;
     width: 30%;
     height: 8vh;
+    margin-left: 5%;
 }
 
 

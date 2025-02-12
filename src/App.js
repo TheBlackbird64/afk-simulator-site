@@ -20,7 +20,7 @@ function App() {
 
 			<main className="flexbox-center-col">
 				<img src="./images/Titre.png" alt="Titre du jeu"/>
-				<Button col={col} txt="Jouez maintenant !"/>
+				<Button col={col} txt="Jouez maintenant !" icon="./images/icons/play.svg"/>
 			</main>
 
 			<Footer col={col} />
