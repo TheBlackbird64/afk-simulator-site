@@ -1,4 +1,5 @@
 import './components.css';
+import './styles/button.css';
 
 function Button ({col, txt, icon="", callback = () => {}}) {
 
@@ -19,7 +20,6 @@ function Button ({col, txt, icon="", callback = () => {}}) {
                 <div className='flexbox-center-col'>
                     <p>{txt}</p>
                 </div>
-                
             </button>
         </>
     );

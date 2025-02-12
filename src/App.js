@@ -1,6 +1,6 @@
-//import logo from './logo.svg';
 import './App.css';
-import './components/components.css'
+import './styles_pages/home.css';
+
 import Navbar from "./components/navbar.js";
 import Footer from "./components/footer.js";
 import Button from "./components/button.js";

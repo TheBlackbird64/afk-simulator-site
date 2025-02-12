@@ -1,4 +1,5 @@
 import './components.css';
+import './styles/footer.css';
 
 function Footer({col}) {
 

@@ -1,0 +1,13 @@
+
+main > img {
+    margin-top: 10%;
+    width: 65vw;
+}
+
+
+main .button { /* Bouton de la page d'accueil pas dans la nav */
+    margin: 10vh;
+    width: 30%;
+    height: 8vh;
+    margin-left: 5%;
+}

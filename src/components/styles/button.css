@@ -1,0 +1,79 @@
+/* 
+        Classe générale des boutons 
+*/
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    
+    padding: 0;
+    margin: 0 auto;
+    width: 17%;
+    height: 80%;
+    border: 0px;
+    z-index: 1;
+}
+
+/* 
+        Contenu boutons (icone + div + texte)
+*/
+
+.button img {
+    height: 80%;
+    margin-right: 3%;
+    margin-left: 5%;
+    z-index: 3;
+}
+
+.button div {
+    height: 100%;
+    margin-right: 0;
+    flex-grow: 1;
+    right: 0;
+    background-color: var(--grey);
+    z-index: 3;
+}
+
+.button div p {
+    padding: 0;
+    margin: auto;
+    z-index: 4;
+}
+
+/* 
+        Animations
+*/
+
+.button::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: #FF0000;
+    width: 0%;
+    height: 100%;
+    z-index: 2;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    background-color: var(--red);
+    width: 0%;
+    height: 100%;
+    z-index: 3;
+}
+
+
+.button:hover::before {
+    width: 100%;
+    transition-duration: 1s;
+}
+
+.button:hover::after {
+    width: 100%;
+    transition-duration: 0.5s;
+}

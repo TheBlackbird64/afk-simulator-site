@@ -1,0 +1,24 @@
+
+nav {
+    height: 8vh;
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-button-home {
+    width: 10vh;
+    height: 100%;
+    border: 0px;
+    background-color: white;
+
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.nav-button-home img {
+    height: 5vh;
+    float: left;
+}
+
+nav .button, nav .button div, nav .button::before, .button::after {
+    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}

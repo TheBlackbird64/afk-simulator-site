@@ -1,4 +1,5 @@
 import './components.css';
+import './styles/navbar.css';
 import Button from "./button.js";
 
 function Navbar({col}) {

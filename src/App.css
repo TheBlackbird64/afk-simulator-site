@@ -1,11 +1,17 @@
-
-/* Parametres généraux */
+/*  
+    ------------------------------------------------
+        Parametres généraux
+    ------------------------------------------------
+*/
 
 /*@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 
 * {
-
+    --blue: #6060FF;
+    --red: #FF6060;
+    --green: #60EF60;
+    --grey: #606060;
 
     font-family: "Exo";
     font-size: medium;
@@ -14,7 +20,11 @@
     color: white;
 }
 
-/* Corps de la page */
+/*  
+    ------------------------------------------------
+        Corps du site (toutes les pages)
+    ------------------------------------------------
+*/
 
 html, body, #root, .App {
     height: 100%;
@@ -33,7 +43,57 @@ body {
 	background-size: 100% 100%;
 }
 
-main > img {
-    margin-top: 10%;
-    width: 65vw;
+
+/*  
+    ------------------------------------------------
+        Couleurs des éléments
+    ------------------------------------------------
+*/
+
+
+/* Background */
+.back-red {
+    background-color: var(--red);
+}
+
+.back-green {
+    background-color: var(--green);
+}
+
+.back-blue {
+    background-color: var(--blue);
+}
+
+/* Borders */
+.border-red {
+    border: solid #FF0000 3px;
+}
+
+.border-green {
+    border: solid #00FF00 3px;
+}
+
+.border-blue {
+    border: solid #0000FF 3px;
+}
+
+
+/*  
+    ------------------------------------------------
+        Classes générales 
+    ------------------------------------------------
+*/
+
+.flexbox-center-row {
+    flex-direction: row;
+}
+
+.flexbox-center-col {
+    flex-direction: column;
+}
+
+.flexbox-center-row, .flexbox-center-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
