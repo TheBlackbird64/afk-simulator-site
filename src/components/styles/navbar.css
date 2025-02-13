@@ -6,12 +6,13 @@ nav {
 }
 
 .nav-button-home {
-    width: 10vh;
-    height: 100%;
+    padding: 0 1%;
+    margin-left: 1%;
+    height: 80%;
     border: 0px;
-    background-color: white;
+    background-color: var(--grey);
 
-    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
 .nav-button-home img {
@@ -19,6 +20,6 @@ nav {
     float: left;
 }
 
-nav .button, nav .button div, nav .button::before, .button::after {
+nav .button, nav .button div, nav .button::before, nav .button::after {
     clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
 }
