@@ -15,9 +15,9 @@ function Button ({col, txt, icon="", callback = () => {}}) {
 
     return (
         <>
-            <button className={`button back-${col}`} onClick={callback}> 
+            <button className={`button button-anim-${col} back-${col}`} onClick={callback}> 
                 {iconButton}
-                <div className='flexbox-center-col'>
+                <div className={`flexbox-center-col`}>
                     <p>{txt}</p>
                 </div>
             </button>

@@ -6,7 +6,7 @@ function Navbar({col}) {
     
     return (
         <nav className={`flexbox-center-row border-${col}`}>
-            <button className='nav-button-home'>
+            <button className={`nav-button-home button-anim-${col}`}>
                 <img src="./images/icon.png" alt="logo"/>
                 
             </button>

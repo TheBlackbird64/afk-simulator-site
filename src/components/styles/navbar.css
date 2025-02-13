@@ -1,9 +1,17 @@
 
+/*
+    Nav 
+*/
+
 nav {
     height: 8vh;
     margin-top: 2%;
     background-color: rgba(0, 0, 0, 0);
 }
+
+/* 
+    Bouton de l'accueil spécial 
+*/
 
 .nav-button-home {
     padding: 0 1%;
@@ -11,15 +19,52 @@ nav {
     height: 80%;
     border: 0px;
     background-color: var(--grey);
+}
 
+/* Pour l'image */
+.nav-button-home img { 
+    height: 5vh;
+    float: left;
+    z-index: 3;
+}
+
+/* animation du bouton */
+.nav-button-home::before { /* pseudo élément pour l'animation */
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 0%;
+    height: 100%;
+    z-index: 2;
+}
+
+.nav-button-home:hover::before { /* hover */
+    width: 15%;
+}
+
+.nav-button-home::before, .nav-button-home:hover::before {  /* Durée de l'animation pour les 2 éléments (survol et fin du survol) */
+    transition-duration: 0.5s;
+}
+
+.nav-button-home, .nav-button-home::before {
     clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
-.nav-button-home img {
-    height: 5vh;
-    float: left;
+
+nav .button { /* Boutons polygonaux */
+    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
 }
 
-nav .button, nav .button div, nav .button::before, nav .button::after {
+nav .button div {
+    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+    z-index: 2;
+}
+
+nav .button::before {
+    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+}
+
+nav .button::after {
     clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
 }

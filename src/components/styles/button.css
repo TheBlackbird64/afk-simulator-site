@@ -12,7 +12,6 @@
     width: 17%;
     height: 80%;
     border: 0px;
-    z-index: 1;
 
     overflow: hidden;
 }
@@ -22,26 +21,27 @@
 */
 
 .button img {
+    position: relative;
     height: 80%;
     margin-right: 3%;
     margin-left: 5%;
-    z-index: 3;
 }
 
 .button div {
+    position: relative;
+    z-index: 1;
     height: 100%;
     margin-right: 0;
     flex-grow: 1;
     right: 0;
     background-color: var(--grey);
-    z-index: 3;
 }
 
 .button div p {
     position: relative;
     padding: 0;
     margin: auto;
-    z-index: 5;
+    z-index: 4;
 }
 
 /* 
@@ -49,16 +49,15 @@
 */
 
 
-/* On fait 2 pseudo éléments : 1 pour le glissement sur l'image et 1 pour le glissement sur la div étant donné que ce n'est pas le même glissement */
+/*  On fait 2 pseudo éléments : 1 pour le glissement sur l'image et 1 pour le glissement sur la div étant donné que ce n'est pas le même glissement 
+    Les 2 sont appliqués sur le bouton */
 .button::before { /* Pour l'image */
     content: "";
     position: absolute;
     left: 0%;
     top: 0%;
-    background-color: #FF0000;
     width: 0%;
     height: 100%;
-    z-index: 2;
 }
 
 .button::after { /* Pour le div */
@@ -66,10 +65,8 @@
     position: absolute;
     left: 25%;
     top: 0%;
-    background-color: var(--red);
     width: 0%;
     height: 100%;
-    z-index: 3;
 }
 
 /* On crée un pseudo élément de width: 0 et après on l'augmennte lorsque survolé */
@@ -88,4 +85,27 @@
 
 .button::after, .button:hover::after {
     transition-duration: 0.5s;
+}
+
+/* Classes nécéssaires pour la couleur */
+
+.button-anim-red::before {
+    background-color: #FF0000;
+}
+.button-anim-red::after {
+    background-color: var(--red);
+}
+
+.button-anim-green::before {
+    background-color: #00FF00;
+}
+.button-anim-green::after {
+    background-color: var(--green);
+}
+
+.button-anim-blue::before {
+    background-color: #0000FF;
+}
+.button-anim-blue::after {
+    background-color: var(--blue);
 }
