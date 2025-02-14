@@ -4,26 +4,35 @@ import './styles_pages/home.css';
 import Navbar from "./components/navbar.js";
 import Footer from "./components/footer.js";
 import Button from "./components/button.js";
-import { useState, useEffect } from "react";
 
 function App() {
-	const [col, setCol] = useState(0);
 
-	useEffect(() => {
-        const colors = ["red", "green", "blue"];
-        setCol(colors[Math.floor(Math.random() * colors.length)]);
-    }, []);
+	// Choix de la couleur du site
+	const cleStorageCol = "col";
 
+	const colors = ["red", "green", "blue"];
+	const colStocke = localStorage.getItem(cleStorageCol);
+	let colSite = colStocke;
+	console.log(colStocke);
+	
+	while (colSite === colStocke) {
+		colSite = colors[Math.floor(Math.random() * colors.length)];
+	}
+    
+	localStorage.setItem(cleStorageCol, colSite);
+
+	// App
 	return (
 		<div className="App">
-			<Navbar col={col}/>
+			<Navbar col={colSite}/>
 
 			<main className="flexbox-center-col">
 				<img src="./images/Titre.png" alt="Titre du jeu"/>
-				<Button col={col} txt="Jouez maintenant !" icon="./images/icons/play.svg"/>
+				<span className={`txt-accueil txt-${colSite}`}>"Le seul jeu où ne rien faire est un art."</span>
+				<Button col={colSite} txt="Jouez maintenant !" icon="./images/icons/play.svg"/>
 			</main>
 
-			<Footer col={col} />
+			<Footer col={colSite} />
 		</div>
 	);
 }

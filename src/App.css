@@ -77,6 +77,18 @@ body {
     border: solid #0000FF 3px;
 }
 
+/* Police */
+.txt-red {
+    color: #FF0000;
+}
+
+.txt-green {
+    color: #00FF00;
+}
+
+.txt-blue {
+    color: #0000FF;
+}
 
 /*  
     ------------------------------------------------

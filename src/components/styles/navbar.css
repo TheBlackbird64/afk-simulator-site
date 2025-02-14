@@ -62,10 +62,6 @@ nav .button {
 }
 
 /* effet inverse sur le texte et les icones */
-nav .button div p {
-    transform: skewX(10deg);
-}
-
-nav .button img {
+nav .button div p, nav .button img {
     transform: skewX(10deg);
 }
