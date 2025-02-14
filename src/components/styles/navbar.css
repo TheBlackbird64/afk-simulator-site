@@ -10,7 +10,7 @@ nav {
 }
 
 /* 
-    Bouton de l'accueil spécial 
+    Bouton de l'accueil spécial (qui ramene au menu avec l'icone du jeu dedans)
 */
 
 .nav-button-home {
@@ -25,10 +25,11 @@ nav {
 .nav-button-home img { 
     height: 5vh;
     float: left;
-    z-index: 3;
+    transform: skewX(10deg);
 }
 
-/* animation du bouton */
+/* animation des boutons */
+
 .nav-button-home::before { /* pseudo élément pour l'animation */
     content: "";
     position: absolute;
@@ -36,35 +37,35 @@ nav {
     top: 0%;
     width: 0%;
     height: 100%;
-    z-index: 2;
 }
 
 .nav-button-home:hover::before { /* hover */
-    width: 15%;
+    width: 100%;
 }
 
 .nav-button-home::before, .nav-button-home:hover::before {  /* Durée de l'animation pour les 2 éléments (survol et fin du survol) */
     transition-duration: 0.5s;
 }
 
-.nav-button-home, .nav-button-home::before {
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+.nav-button-home {
+    transform: skewX(-10deg);
 }
 
+/*
+    Boutons polygonaux de la barre de nav
+    Pour que la superposition des éléments fonctionne on doit séparer certains clip path
+*/
 
-nav .button { /* Boutons polygonaux */
-    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+/* effet sur le coté pour les boutons */
+nav .button { 
+    transform: skewX(-10deg);
 }
 
-nav .button div {
-    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
-    z-index: 2;
+/* effet inverse sur le texte et les icones */
+nav .button div p {
+    transform: skewX(10deg);
 }
 
-nav .button::before {
-    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
-}
-
-nav .button::after {
-    clip-path: polygon(calc(0% + 10px) 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+nav .button img {
+    transform: skewX(10deg);
 }

@@ -29,7 +29,6 @@
 
 .button div {
     position: relative;
-    z-index: 1;
     height: 100%;
     margin-right: 0;
     flex-grow: 1;
@@ -38,10 +37,10 @@
 }
 
 .button div p {
+    z-index: 1;
     position: relative;
     padding: 0;
     margin: auto;
-    z-index: 4;
 }
 
 /* 
