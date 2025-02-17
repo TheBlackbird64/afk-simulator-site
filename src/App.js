@@ -1,9 +1,9 @@
 import './App.css';
-import './styles_pages/home.css';
+import './pages/home.css';
 
-import Navbar from "./components/navbar.js";
-import Footer from "./components/footer.js";
-import Button from "./components/button.js";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/home.js";
 
 function App() {
 
@@ -23,17 +23,13 @@ function App() {
 
 	// App
 	return (
-		<div className="App">
-			<Navbar col={colSite}/>
-
-			<main className="flexbox-center-col">
-				<img src="./images/Titre.png" alt="Titre du jeu"/>
-				<span className={`txt-accueil txt-${colSite}`}>"Le seul jeu où ne rien faire est un art."</span>
-				<Button col={colSite} txt="Jouez maintenant !" icon="./images/icons/play.svg"/>
-			</main>
-
-			<Footer col={colSite} />
-		</div>
+		<Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/tutorial" element={<Home />} />
+                <Route path="*" element={<Home />} /> {/* Page 404 */}
+            </Routes>
+        </Router>
 	);
 }
 
