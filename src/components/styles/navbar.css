@@ -19,6 +19,8 @@ nav {
     height: 80%;
     border: 0px;
     background-color: var(--grey);
+
+    cursor: pointer;
 }
 
 /* Pour l'image */

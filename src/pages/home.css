@@ -1,12 +1,12 @@
 
 /* Titre du jeu */
-main > img {
+.home-main > img {
     margin-top: 6vh;
     width: 65vw;
 }
 
 /* Bouton de la page d'accueil pas dans la nav */
-main .button { 
+.home-main .button { 
     margin: 10vh 0;
     width: 30%;
     height: 8vh;
@@ -24,17 +24,17 @@ main .button {
     Animations de chargement de la page 
 */
 
-nav {
+.home-nav {
     opacity: 0;
     animation: animChargementNav 1s ease 1s 1 normal both;
 }
 
-footer {
+.home-footer {
     opacity: 0;
     animation: animChargementFooter 1s ease 1s 1 normal both;
 }
 
-main > img, main .button {
+.home-main > img, .home-main .button {
     opacity: 0;
     animation: animChargementImageTitre 1s ease-in-out 0s 1 normal both;
 }

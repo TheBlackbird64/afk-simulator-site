@@ -26,12 +26,12 @@
     ------------------------------------------------
 */
 
-html, body, #root, .App {
+html, body, #root {
     height: 100%;
     overflow-y: hidden;
 }
 
-.App {
+#root {
     display: flex;
     flex-direction: column;
     align-items: center;

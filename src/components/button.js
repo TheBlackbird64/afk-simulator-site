@@ -1,4 +1,4 @@
-import './components.css';
+
 import './styles/button.css';
 
 function Button ({col, txt, icon="", callback = () => {}}) {
