@@ -17,6 +17,7 @@ function Installer({col, titre, txt, icon, callback}) {
 
 function Download({col}) {
 
+
     return (
         <div className="scroll-div">
 			<Navbar col={col}/>
@@ -31,7 +32,7 @@ function Download({col}) {
 					titre="Windows" 
 					txt="Installer le fichier, exécutez le et suivez les instructions. Le launcher mettra à jour le jeu à chaque lancement et un raccourci est créé sur votre bureau." 
 					icon="./images/icons/windows.svg" 
-					callback={() => {}} 
+					callback={() => {window.location.href = "http://localhost:80/download-windows";}} 
 				/>
 
 				<Installer 
@@ -39,7 +40,7 @@ function Download({col}) {
 					titre="Linux" 
 					txt="Installer le fichier, exécutez le et suivez les instructions. Le launcher mettra à jour le jeu à chaque lancement et un raccourci est créé sur votre bureau." 
 					icon="./images/icons/linux.svg"
-					callback={() => {}} 
+					callback={() => {window.location.href = "http://localhost:80/download-linux";}} 
 				/>
 				
 				<Installer 
@@ -47,7 +48,7 @@ function Download({col}) {
 					titre="MacOS" 
 					txt="Installer le fichier, exécutez le et suivez les instructions. Le launcher mettra à jour le jeu à chaque lancement et un raccourci est créé sur votre bureau." 
 					icon="./images/icons/macOS.svg" 
-					callback={() => {}} 
+					callback={() => {window.location.href = "http://localhost:80/download-macOS";}} 
 				/>
 
 			</section>
