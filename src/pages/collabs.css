@@ -1,0 +1,45 @@
+
+
+.collabs-section {
+    margin: auto 0px;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.collabs-article {
+    padding: 1vh 1vw;
+    margin: 20px 1vw;
+
+    width: 20%;
+    height: 250px;
+
+    background-color: white;
+    overflow: auto;
+}
+
+.collabs-article img {
+    height: 25%;
+}
+
+.collabs-article p, .collabs-article a, .collabs-article h2 {
+    color: black;
+}
+
+.collabs-article span {
+    font-size: large;
+    text-decoration: underline;
+}
+
+.collabs-article p {
+    text-align: center;
+}
+
+.collabs-article h2 {
+    font-size: large;
+    font-weight: 600;
+}
+
+.collabs-article a {
+    font-size: x-large;
+    font-weight: 600;
+}

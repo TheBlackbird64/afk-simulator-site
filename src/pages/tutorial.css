@@ -2,4 +2,15 @@
 /* 
     Contenu du tutoriel 
 */
+.tutorial-gif {
+    width: 100%;
+}
 
+.tutorial-gif img {
+    height: 15vh;
+}
+
+.main-page p img {
+    height: 25px;
+    transform: translateY(7px);
+}
