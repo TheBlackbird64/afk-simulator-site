@@ -2,25 +2,15 @@ import './tutorial.css'
 
 import Navbar from "../components/navbar.js";
 import Footer from "../components/footer.js";
-
-
-function TitreSection ({col, txt}) {
-
-	return (
-		<>
-			<h2 className={`tutorial-h2`}>{txt}</h2>
-			<hr className={`tutorial-line line-${col}`}></hr>
-		</>
-	);
-}
+import TitreSection from "../components/titreSection.js";
 
 function Tutorial({col}) {
 
     return (
-        <div className="tutorial-div">
+        <div className="scroll-div">
 			<Navbar col={col}/>
 
-			<main className={`tutorial-main border-${col}`}>
+			<main className={`main-page border-${col}`}>
 				<h1>Présentation et tutoriel</h1>
 
 				<TitreSection col={col} txt="Qu'est-ce que AFK Simulator ?"/>
@@ -47,8 +37,8 @@ function Tutorial({col}) {
 
 				{/* Insérer 1 gif : item de couleur + se cacher dans une couleur */}
 
-				<p><span>- Vous êtes prets !</span><br/><br/> 
-				
+				<p><span>- Vous êtes prêts !</span><br/><br/> 
+				Il ne vous reste plus qu'à télécharger le jeu et à ne rien faire pour gagner !
 				</p>
 
 			</main>

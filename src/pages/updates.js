@@ -9,8 +9,10 @@ function Updates({col}) {
         <>
 			<Navbar col={col}/>
 
-			<main className="flexbox-center-col">
-				
+			<main className={`main-page border-${col}`}>
+				<h1>Site en cours de construction...</h1>
+
+				<p>Cette partie sera bientot accessible !</p>
 			</main>
 
 			<Footer col={col} />

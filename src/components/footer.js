@@ -1,4 +1,3 @@
-import './components.css'
 import './styles/footer.css';
 import { useLocation } from 'react-router-dom';
 

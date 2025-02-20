@@ -1,0 +1,40 @@
+
+.download-section {
+    margin: auto 0px;
+    
+}
+
+.download-article {
+    padding: 1vh 2vw;
+    margin: 20px 2vw;
+
+    width: 20%;
+    height: 350px;
+
+    background-color: white;
+}
+
+.download-article > img {
+    width: 15%;
+}
+
+.download-article > h1 {
+    color: black;
+    font-size: x-large;
+    font-weight: 600;
+    margin: 4%;
+}
+
+.download-article > p {
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10%;
+}
+
+.download-section .button {
+    margin-top: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 60px;
+}

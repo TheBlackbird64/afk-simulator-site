@@ -109,3 +109,66 @@ body {
     align-items: center;
     justify-content: center;    
 }
+
+
+/* 
+    Page complete, prends en compte le scroll contrairement à la page d'accueil 
+    Definition des paragraphes, titres, ...
+*/
+
+nav, footer {
+    width: 90%;
+}
+
+.scroll-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    overflow-y: auto;
+}
+
+.main-page {
+    margin: 5vh auto;
+    width: 80%;
+    height: fit-content;
+
+    background-color: var(--grey);
+}
+
+
+/* Paragraphe des sections */
+
+.main-page p {
+    margin-left: 10%;
+}
+
+/* Titre des sections */
+.main-page h1 {
+    margin: 50px auto;
+    text-align: center;
+
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.main-page h2 {
+    margin-top: 50px;
+
+    font-size: x-large;
+    font-weight: 600;
+    
+}
+
+.main-page .titreSection-line, .main-page h2 {
+    margin-left: 7%;
+}
+
+.main-page span {
+    font-size: large;
+    font-weight: 600;
+    text-decoration: underline;
+}

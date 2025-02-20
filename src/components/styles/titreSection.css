@@ -1,0 +1,20 @@
+
+.titreSection-line {
+    border: none;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+.line-red {
+    border-top: 5px solid #FF0000; 
+}
+
+.line-green {
+    border-top: 5px solid #00FF00; 
+}
+
+.line-blue {
+    border-top: 5px solid #0000FF; 
+}
