@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "AFK Simulator",
+  "name": "AFKSimulator, le jeu dans lequel on peut gagner sans jouer!",
   "icons": [
     {
       "src": "favicon.ico",

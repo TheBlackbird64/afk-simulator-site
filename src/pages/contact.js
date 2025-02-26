@@ -34,7 +34,7 @@ function Contact({col}) {
 			</main>
 
 			<section className={`flexbox-center-row contact-section`}>
-				<BlockContact col={col} icon="./images/icons/mail.svg" txt="Mail" content="test@gmail.com"/>
+				{/*<BlockContact col={col} icon="./images/icons/mail.svg" txt="Mail" content="test@gmail.com"/>*/}
 				<BlockContact col={col} icon="./images/icons/github.svg" txt="Github Jeu" content="Lien vers le dépot GitHub du jeu" ref="https://github.com/TheBlackbird64/AFK_Simulator"/>
 				<BlockContact col={col} icon="./images/icons/github.svg" txt="Github Site" content="Lien vers le dépot GitHub du site" ref="https://github.com/TheBlackbird64/afk-simulator-site"/>
 			</section>

@@ -8,7 +8,7 @@ function Footer({col}) {
     return (
         <footer className={`flexbox-center-row border-${col} back-${col} ${location.pathname === "/" ? "home-footer" : ""}`}>
             <p>© AFK Simulator. Tous droits réservés.</p>
-            <a href="./test">Mentions légales</a>
+            <a href="./">Mentions légales</a>
         </footer>
     );
 }

@@ -3,7 +3,7 @@ const path = require("path");
 
 // Variables et config de App
 const app = express(); 
-const PORT = 8301;
+const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, "..", "build")));
 
@@ -12,11 +12,11 @@ app.use(express.static(path.join(__dirname, "..", "build")));
 
 app.get('/download-windows', (req, res) => {
     const filename = "AFK_Simulator_windows.zip"
-    res.setHeader(`Content-Disposition', 'attachment; filename="${filename}"`);
-    res.sendFile(path.join(__dirname, "..", "..", "staticFiles", filename));
+    res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
+    res.sendFile(path.join(__dirname, "..", "downloadFiles", filename));
 });
 
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "..", "build", "index.html"));
 });
 
