@@ -31,10 +31,11 @@ function Contact({col}) {
 
 			<main className={`main-page border-${col}`}>
 				<h1>Contacts</h1>
+				<p>Si vous souhaitez participer au projet, les dépôts Github sont disponibles. N'hésitez pas à faire remonter des éventuels bugs ou amélioration possibles ! </p>
 			</main>
 
 			<section className={`flexbox-center-row contact-section`}>
-				{/*<BlockContact col={col} icon="./images/icons/mail.svg" txt="Mail" content="test@gmail.com"/>*/}
+				{/*<BlockContact col={col} icon="./images/icons/mail.svg" txt="Mail" content="contact@afk-simulator.com"/>*/}
 				<BlockContact col={col} icon="./images/icons/github.svg" txt="Github Jeu" content="Lien vers le dépot GitHub du jeu" ref="https://github.com/TheBlackbird64/AFK_Simulator"/>
 				<BlockContact col={col} icon="./images/icons/github.svg" txt="Github Site" content="Lien vers le dépot GitHub du site" ref="https://github.com/TheBlackbird64/afk-simulator-site"/>
 			</section>

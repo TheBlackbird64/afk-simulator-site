@@ -32,7 +32,7 @@ function Download({col}) {
 					titre="Windows" 
 					txt="Installer le fichier, exécutez le et suivez les instructions. Le launcher mettra à jour le jeu à chaque lancement et un raccourci est créé sur votre bureau." 
 					icon="./images/icons/windows.svg" 
-					callback={() => {window.location.href = "http://afk-simulator.com/download-windows";}} 
+					callback={() => {window.location.href = "https://afk-simulator.com/download-windows";}} 
 				/>
 
 				<Installer 
@@ -40,7 +40,7 @@ function Download({col}) {
 					titre="Linux" 
 					txt="Installer le fichier, exécutez le et suivez les instructions. Le launcher mettra à jour le jeu à chaque lancement et un raccourci est créé sur votre bureau." 
 					icon="./images/icons/linux.svg"
-					callback={() => {alert("Fichier indisponible pour le moment.");}/*window.location.href = "http://afk-simulator.com/download-linux";}*/} 
+					callback={() => {alert("Fichier indisponible pour le moment.");}/*window.location.href = "https://afk-simulator.com/download-linux";}*/} 
 				/>
 				
 				<Installer 
@@ -48,7 +48,7 @@ function Download({col}) {
 					titre="MacOS" 
 					txt="Installer le fichier, exécutez le et suivez les instructions. Le launcher mettra à jour le jeu à chaque lancement et un raccourci est créé sur votre bureau." 
 					icon="./images/icons/macOS.svg" 
-					callback={() => {alert("Fichier indisponible pour le moment.");}/*window.location.href = "http://afk-simulator.com/download-macos";*/} 
+					callback={() => {alert("Fichier indisponible pour le moment.");}/*window.location.href = "https://afk-simulator.com/download-macos";*/} 
 				/>
 
 			</section>
